@@ -16,7 +16,7 @@ body {
      padding-bottom: 75px;
      display: grid;
      grid-template-columns: repeat(2, 1fr);
-     grid-gap: 10px;
+     grid-gap: 8px;
      grid-auto-rows: minmax(150px, auto);
 
 }
@@ -29,7 +29,7 @@ body {
 .top-nav {
      position: fixed;
      width: 100%;
-     background-color: red;
+     background-color: black;
      height: 8%;
 }
 
@@ -55,8 +55,8 @@ input[type=text] {
      float: right;
      width: 20%;
      text-align: right;
-     background: red;
-     color: black;
+     background: black;
+     color: white;
      border: 1px black solid;
 }
 
@@ -66,25 +66,24 @@ form.example button {
      top: 0;
      width: 5%;
      padding: 5px;
-     background: red;
+     background: darkgrey;
      color: black;
      font-size: 12px;
      cursor: pointer;
-     background: red;
-     color: black;
+     color: white;
      border: 1px black solid;
      border-left: none;
 }
 
 form.example button:hover {
-     background-color: indianred;
+     background-color: red;
 }
 
 form.example::after {
      content: "";
      clear: both;
      display: table;
-     background: red;
+     background: black;
      color: black;
 }
 
@@ -94,8 +93,36 @@ form.example::after {
      bottom: 0;
      width: 100%;
      color: white;
-     background-color: red;
      height: 8%;
      text-align: center;
 
+}
+
+.but-container {
+     width: 100%;
+     position: fixed;
+     bottom: 0;
+     background-color: black;
+     display: grid;
+     grid-template-columns: auto auto auto;
+     grid-gap: 5px;
+
+}
+
+.button {
+     height: 50px;
+     text-align: center;
+
+}
+
+h4 {
+     font-size: 0.9em;
+}
+
+.button:hover {
+     background-color: red;
+}
+
+.button:active {
+     background-color: red;
 }
