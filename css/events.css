@@ -4,7 +4,7 @@ body {
 }
 
 .site-container {
-     background-color: yellow;
+     background-color: black;
      color: white;
 
 }
@@ -16,14 +16,13 @@ body {
      display: grid;
      grid-template-columns: repeat(2, 1fr);
      grid-gap: 10px;
-     grid-auto-columns: minmax(200px, auto);
-     grid-auto-rows: minmax(200px, auto);
+     grid-auto-rows: minmax(150px, auto);
 
 }
 
 .item {
      background-color: whitesmoke;
-     color: rebeccapurple;
+     color: black;
 }
 
 .top-nav {
@@ -41,5 +40,6 @@ body {
      color: white;
      background-color: red;
      height: 8%;
+     text-align: center;
 
 }
