@@ -32,6 +32,61 @@ body {
      height: 8%;
 }
 
+h1 {
+     position: fixed;
+     left: 3%;
+     top: 5px;
+     margin: 0;
+     padding: 0;
+     color: white;
+     font-size: 40px;
+     text-align: left;
+     font-family: sans-serif;
+}
+
+input[type=text] {
+     position: fixed;
+     right: 5%;
+     top: 0;
+     padding: 5px;
+     font-size: 12px;
+     border: none;
+     float: right;
+     width: 20%;
+     text-align: right;
+     background: red;
+     color: black;
+     border: 1px black solid;
+}
+
+form.example button {
+     position: fixed;
+     right: 0;
+     top: 0;
+     width: 5%;
+     padding: 5px;
+     background: red;
+     color: black;
+     font-size: 12px;
+     cursor: pointer;
+     background: red;
+     color: black;
+     border: 1px black solid;
+     border-left: none;
+}
+
+form.example button:hover {
+     background-color: indianred;
+}
+
+form.example::after {
+     content: "";
+     clear: both;
+     display: table;
+     background: red;
+     color: black;
+}
+
 .foot-nav {
      position: fixed;
      left: 0;
