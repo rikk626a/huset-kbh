@@ -1,0 +1,45 @@
+body {
+     margin: auto;
+     padding: 0;
+}
+
+.site-container {
+     background-color: yellow;
+     color: white;
+
+}
+
+.event-container {
+     margin: 0px 3% 0px 3%;
+     padding-top: 75px;
+     padding-bottom: 75px;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 10px;
+     grid-auto-columns: minmax(200px, auto);
+     grid-auto-rows: minmax(200px, auto);
+
+}
+
+.item {
+     background-color: whitesmoke;
+     color: rebeccapurple;
+}
+
+.top-nav {
+     position: fixed;
+     width: 100%;
+     background-color: red;
+     height: 8%;
+}
+
+.foot-nav {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     color: white;
+     background-color: red;
+     height: 8%;
+
+}
