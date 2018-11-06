@@ -1,0 +1,50 @@
+.foot-nav {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     color: white;
+     height: 8%;
+     text-align: center;
+
+}
+
+.but-container {
+     width: 100%;
+     position: fixed;
+     bottom: 0;
+     background-color: black;
+     display: grid;
+     grid-template-columns: auto auto auto;
+     grid-gap: 5px;
+
+}
+
+.button {
+     height: 50px;
+     text-align: center;
+     line-height: 0.1;
+
+}
+
+.fa-map-marked-alt .fa-bullhorn {
+     display: block;
+     font-size: 35px;
+     text-align: center;
+     margin: auto;
+     color: red;
+}
+
+
+h4 {
+     font-size: 0.8em;
+     vertical-align: sub;
+}
+
+.button:hover {
+     background-color: red;
+}
+
+.button:active {
+     background-color: red;
+}
