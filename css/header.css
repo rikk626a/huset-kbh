@@ -1,3 +1,9 @@
+body {
+     margin: auto;
+     padding: 0;
+     font-family: sans-serif;
+}
+
 .top-nav {
      position: fixed;
      width: 100%;
