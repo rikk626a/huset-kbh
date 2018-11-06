@@ -15,9 +15,9 @@ body {
      padding-top: 75px;
      padding-bottom: 75px;
      display: grid;
-     grid-template-columns: repeat(2, 1fr);
+     grid-template-columns: 1fr;
      grid-gap: 8px;
-     grid-auto-rows: minmax(150px, auto);
+     grid-auto-rows: minmax(250px, auto);
 
 }
 
