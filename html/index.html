@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="DA">
+
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Huset-kbh</title>
+     <link rel="stylesheet" href="../css/events.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+     <script>
+          $(function() {
+               $("#include_header").load("header.html");
+               $("#include_footer").load("footer.html");
+          });
+
+     </script>
+</head>
+
+<body>
+
+     <main>
+          <section class="container" data-container></section>
+          <template data-template>
+            <article class="postListview">
+             <h2 data-title></h2>
+             <p data-text></p>
+             </article>
+         </template>
+
+
+     </main>
+     <div id="include_header"></div>
+
+     <div class="site-container">
+          <div class="event-container">
+               <div class="item item-d">
+
+                    <img src="../img/events/film/rockyhorrorshow24-11.jpg" alt="rockyshow" style="width:100%;">
+
+                    <div class="item item-d">
+                         2</div>
+                    <div class="item item-d">3</div>
+                    <div class="item item-d">4</div>
+                    <div class="item item-d">5</div>
+                    <div class="item item-d">6</div>
+                    <div class="item item-d">7</div>
+                    <div class="item item-d">8</div>
+                    <div class="item item-d">9</div>
+                    <div class="item item-d">10</div>
+                    <div class="item item-d">11</div>
+                    <div class="item item-d">12</div>
+                    <div class="item item-d">13</div>
+                    <div class="item item-d">14</div>
+                    <div class="item item-d">15</div>
+                    <div class="item item-d">16</div>
+               </div>
+          </div>
+
+          <div id="include_footer"></div>
+     </div>
+
+     <script>
+          document.addEventListener("DOMContentLoaded", getJSON);
+          let posts;
+          let postTemplate = document.querySelector("[data-template]");
+          let postContainer = document.querySelector("[data-container]");
+
+          async function getJSON() {
+               let jsonData = await fetch("http://kroghport.dk/wordpress/wp-json/wp/v2/posts");
+               posts = await jsonData.json();
+               visPosts();
+          }
+
+          function visPosts() {
+
+               console.log(posts);
+
+               posts.forEach(post => {
+                    let klon = postTemplate.cloneNode(true).content;
+                    klon.querySelector("[data-title]").textContent = post.title.rendered;
+                    klon.querySelector("[data-text]").innerHTML = post.content.rendered;
+                    postContainer.appendChild(klon);
+
+
+
+               })
+          }
+
+     </script>
+</body>
+
+</html>
