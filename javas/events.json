@@ -1,0 +1,15 @@
+[
+     {
+          "id": 1,
+          "kategori": "film",
+          "navn": "The Rocky Horror Picture Show",
+          "pris": "Dør 60kr",
+          "dato": "24.11",
+          "tid": "18:30",
+          "kortbeskrivelse": "Rocky Horror Picture Show for alle Horror-film-fans.",
+          "langbeskrivelse": "Rocky Horror Picture Show for alle Horror-film-fans.",
+
+          "eventlink": "https://www.facebook.com/events/276867889472902/",
+          "billede": "rockyhorrorshow24-11"
+}
+     ]

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Bistro Babushka</title>
+     <link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body cz-shortcut-listen="true">
+     <header>
+          <div class="placer">
+               <div class="logo">
+
+               </div>
+               <h1 class="center">Bistro Babushka</h1>
+          </div>
+     </header>
+
+
+
+     <nav>
+          <button id="filter-alle" class="menu-item" data-retter="alle">Alle retter</button>
+          <button id="filter-forretter" class="menu-item" data-retter="forretter">Forretter</button>
+          <button id="filter-hovedretter" class="menu-item" data-retter="hovedretter">Hovedretter</button>
+          <button id="filter-desserter" class="menu-item" data-retter="desserter">Desserter</button>
+          <button id="filter-drikkevare" class="menu-item" data-retter="drikkevare">Drikkevare</button>
+     </nav>
+
+     <main>
+          <h1 id="overskrift" data-overskrift></h1>
+          <section id="menu-container" data-container></section>
+     </main>
+     <template data-template>
+
+       <div id="modal">
+       <button>X</button>
+        <div id="modal-content">
+
+            <h2 class="modal-navn">test</h2>
+            <img class="modal-billede" src="" alt="">
+        </div>
+    </div>
+
+
+        <article class="ret" data-ret>
+            <img src="xx" alt="" class="info" data-billede>
+            <h2 class="info" data-navn></h2>
+            <p class="info" data-kortbeskrivelse></p>
+            <p>Pris: <span class="info" data-pris ></span>,-</p>
+        </article>
+    </template>
+
+     <footer>
+          <div class="foot">
+               <h3>Addresse: <br>Grønnegade 97<br>1234 København K</h3>
+               <h3>Åbningstider: <br> Mandag – fredag: <br>10:30 – 22:00<br>Lørdag: <br>12:00 – 23:00</h3>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.4168250617004!2d12.581335015547332!3d55.681740604938504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46525319c587d4fb%3A0x4806d2fc65a68029!2sGr%C3%B8nnegade+97%2C+1123+K%C3%B8benhavn!5e0!3m2!1sda!2sdk!4v1535971437123" width="200" height="100" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+     </footer>
+
+     <script src="json/js.js">
+     </script>
+</body>
+</html>
